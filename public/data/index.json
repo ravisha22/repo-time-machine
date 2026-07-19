@@ -1,0 +1,32 @@
+[
+  {
+    "id": "redis",
+    "name": "Redis",
+    "description": "A mature in-memory data platform with a long C codebase history.",
+    "accent": "#ff5f57",
+    "file": "redis.json",
+    "headSha": "30379f310190e63dfe860608c7a56e9f6732ed1e",
+    "commits": 320,
+    "generatedAt": "2026-07-19T10:25:30.020Z"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "description": "A UI framework whose subsystem boundaries evolved across reconciler eras.",
+    "accent": "#61dafb",
+    "file": "react.json",
+    "headSha": "172742b419bad2a79ac375c0d5ee15c7ac66bff2",
+    "commits": 320,
+    "generatedAt": "2026-07-19T10:25:53.039Z"
+  },
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "description": "A large TypeScript product with dense module and ownership evolution.",
+    "accent": "#2da7f5",
+    "file": "vscode.json",
+    "headSha": "be161a6b320b4d69ed3bc654ca73a6f2adc287b6",
+    "commits": 260,
+    "generatedAt": "2026-07-19T10:26:26.998Z"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "name": "repo-time-machine",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Research-grade software evolution observatory over Git history.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:web": "vite",
+    "dev:server": "tsx watch server/index.ts",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint src server scripts vite.config.ts vitest.config.ts",
+    "preview": "vite preview",
+    "start": "tsx server/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run lint && npm run test && npm run build",
+    "presets:generate": "tsx scripts/generate-presets.ts",
+    "presets:validate": "tsx scripts/validate-presets.ts"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "express": "^5.2.1",
+    "lucide-react": "^1.24.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "simple-statistics": "^7.9.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/d3": "^7.4.3",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/supertest": "^7.2.0",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.3",
+    "jsdom": "^29.1.1",
+    "oxlint": "^1.71.0",
+    "supertest": "^7.2.2",
+    "tsx": "^4.23.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vitest": "^4.1.10"
+  }
+}

@@ -1,0 +1,86 @@
+:root {
+  color: #edf1f8;
+  background: #090a0f;
+  font-family:
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    Inter,
+    system-ui,
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #090a0f;
+  --panel: rgba(18, 20, 29, 0.9);
+  --border: rgba(171, 180, 203, 0.14);
+  --border-strong: rgba(171, 180, 203, 0.25);
+  --text: #edf1f8;
+  --soft: #a3abba;
+  --faint: #6d7688;
+  --cyan: #64dcff;
+  --green: #71e3a6;
+  --amber: #ffc05c;
+  --violet: #a995ff;
+  --red: #ff746f;
+  --sidebar: 262px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(169, 149, 255, 0.07), transparent 31rem),
+    radial-gradient(circle at 12% 88%, rgba(100, 220, 255, 0.05), transparent 32rem),
+    var(--bg);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: #071014;
+  background: var(--cyan);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #090a0f;
+  border-radius: 999px;
+  background: #2b3140;
+}
+
+#root {
+  min-height: 100vh;
+}
